@@ -1,0 +1,31 @@
+@import 'variables';
+
+.experience-wrapper {
+  position: relative;
+}
+
+.experience-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: -51px;
+  width: 2px;
+  background: #ccc;
+}
+
+.experience-wrapper .experience {
+  position: relative;
+}
+
+.experience-wrapper .experience:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -58px;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  z-index: 1;
+  background: $campbell-blue;
+}
