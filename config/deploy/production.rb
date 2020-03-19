@@ -2,4 +2,4 @@
 
 # server-based syntax
 # ======================
-server '0.0.0.0', user: 'deploy', roles: %w[app db web]
+server '64.227.41.183', user: 'deploy', roles: %w[app db web]
