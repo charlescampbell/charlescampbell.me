@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   get 'home/index', to: 'home#index', as: :home
   get 'projects', to: 'project#index', as: :project
+  get 'education', to: 'education#index', as: :education
 end
