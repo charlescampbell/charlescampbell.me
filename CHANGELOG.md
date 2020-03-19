@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/charlescampbell/campbell.me/compare/v1.0.0...v1.1.0) (2020-03-19)
+
+
+### Features
+
+* **footer:** Active links in footer ([4dac291](https://github.com/charlescampbell/campbell.me/commit/4dac291ac7eddaf2725e523d9a06224f8b536b36))
+* **footer:** Implement static footer links ([d509fa6](https://github.com/charlescampbell/campbell.me/commit/d509fa6a35136fb8be9c72ba7cc530785a599209))
+* **project:** Create a list of live projects I'm working on ([f6291a7](https://github.com/charlescampbell/campbell.me/commit/f6291a71046257085d32ec260d422b8fd70e0a6b))
+
 ## 1.0.0 (2020-03-19)
 
 
