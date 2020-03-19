@@ -9,3 +9,8 @@ Style/HashEachMethods:
 
 Style/HashTransformValues:
   Enabled: true
+
+AllCops:
+  Exclude:
+    - db/**/*
+    - bin/**/*
