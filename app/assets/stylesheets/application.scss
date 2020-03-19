@@ -14,9 +14,10 @@
  *= require_self
  */
 
-@import 'variables';
-@import 'intro';
-@import 'mobile';
+@import "variables";
+@import "intro";
+@import "mobile";
+@import "footer";
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Variables
@@ -30,10 +31,9 @@ html {
   touch-action: manipulation;
 }
 
-
 body {
   font-size: 16px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -76,7 +76,7 @@ h6 {
 h1,
 h2,
 h3 {
-  font-family: 'Poppins', cursive;
+  font-family: "Poppins", cursive;
 }
 
 p {
@@ -109,7 +109,7 @@ h5 {
 }
 
 h6 {
-  font-size: .9em;
+  font-size: 0.9em;
   letter-spacing: 1px;
 }
 
@@ -119,8 +119,8 @@ button {
   text-decoration: none;
   color: inherit;
   line-height: 1;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 a:focus,
@@ -132,6 +132,11 @@ button:hover,
 a b.light-color:hover {
   text-decoration: none;
   color: $campbell-blue;
+}
+
+.active {
+  color: $campbell-blue;
+  font-weight: bold;
 }
 
 b {
@@ -182,7 +187,7 @@ b.max-bold {
 }
 
 .section .heading:before {
-  content: '';
+  content: "";
   height: 10px;
   width: 50px;
   border-radius: 5px;
