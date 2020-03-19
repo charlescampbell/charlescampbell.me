@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/charlescampbell/campbell.me/compare/v1.1.0...v1.2.0) (2020-03-19)
+
+
+### Features
+
+* **education:** List educations ([4582192](https://github.com/charlescampbell/campbell.me/commit/458219240c24aa15fc976b84e213a55439965cfc))
+
+
+### Bug Fixes
+
+* **design:** Fix various design layouts ([29b58e3](https://github.com/charlescampbell/campbell.me/commit/29b58e315b6e2d600edaaea02e85cb8ae9e4c635))
+* **footer:** Make footer sticky ([ab30a94](https://github.com/charlescampbell/campbell.me/commit/ab30a94d3626ec9655f3b1a0eb9cfb4109e29c66))
+
 ## [1.1.0](https://github.com/charlescampbell/campbell.me/compare/v1.0.0...v1.1.0) (2020-03-19)
 
 
