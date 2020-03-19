@@ -1,0 +1,64 @@
+@import "variables";
+
+.project-section {
+  padding-bottom: 0;
+}
+
+.project-section .projectFilter {
+  margin-top: 60px;
+  color: #666;
+}
+
+.project-section .projectFilter a {
+  margin: 10px 10px 0 0;
+}
+
+.project-section .projectFilter a.current {
+  color: $campbell-blue;
+  font-weight: bold;
+}
+
+.project-section .projectContainer {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.project-section .p-item {
+  width: 33.333%;
+  padding: 0 7.5px 0px;
+  margin-top: 15px;
+}
+
+.project-section .p-item a {
+  display: inline;
+}
+
+.project-section .p-item.p-item-2 .img:first-child {
+  float: left;
+  width: 50%;
+  padding-right: 7.5px;
+}
+
+.project-section .p-item.p-item-2 .img:last-child {
+  float: right;
+  width: 50%;
+  padding-left: 7.5px;
+}
+
+.project-link {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #8fd8ff;
+  display: block;
+}
+
+.project-link:hover {
+  font-weight: bold;
+}
+
+.project-links {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
