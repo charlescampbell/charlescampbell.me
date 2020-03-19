@@ -22,21 +22,18 @@
 /* Screens Resolution : 992px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 992px) {
-
   /* ---------------------------------
 	4. INTRO SECTION
 	--------------------------------- */
 
   .intro-section {
-    padding-top: 250px;
+    padding-top: 50px;
   }
-
 }
 
 /* Screens Resolution : 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-
   /* ---------------------------------
 	1. PRIMARY STYLES
 	--------------------------------- */
@@ -57,8 +54,6 @@
     font-size: 1.8em;
   }
 
-
-
   /* ---------------------------------
 	2. COMMONS FOR PAGE DESIGN
 	--------------------------------- */
@@ -71,15 +66,13 @@
     margin-bottom: 30px;
   }
 
-
   /* ---------------------------------
 	4. INTRO SECTION
 	--------------------------------- */
 
   .intro-section {
-    padding-top: 350px;
+    padding-top: 50px;
   }
-
 
   /* ---------------------------------
 	5. PORFOLIO SECTION
@@ -107,7 +100,6 @@
     max-width: 400px;
   }
 
-
   /* ---------------------------------
 	8. EDUCATION SECTION
 	--------------------------------- */
@@ -116,13 +108,11 @@
   .education-wrapper .education:after {
     display: none;
   }
-
 }
 
 /* Screens Resolution : 575px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 575px) {
-
   /* ---------------------------------
 	1. PRIMARY STYLES
 	--------------------------------- */
@@ -131,7 +121,6 @@
     font-size: 14px;
   }
 
-
   /* ---------------------------------
 	5. PORFOLIO SECTION
 	--------------------------------- */
@@ -139,17 +128,16 @@
   .portfolio-section .p-item {
     width: 100%;
   }
-
 }
 
 /* Screens Resolution : 479px
 -------------------------------------------------------------------------- */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+}
 
 /* Screens Resolution : 359px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 359px) {
-
   /* ---------------------------------
 	3. HEADER
 	--------------------------------- */
@@ -165,17 +153,16 @@
   header .info .right-area {
     margin-left: 35px;
   }
-
 }
 
 /* Screens Resolution : 290px
 -------------------------------------------------------------------------- */
-@media only screen and (max-width: 290px) {}
+@media only screen and (max-width: 290px) {
+}
 
 /* Screens Resolution : 290px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 260px) {
-
   /* ---------------------------------
 	3. HEADER
 	--------------------------------- */
@@ -208,5 +195,4 @@
     margin-right: -15px;
     margin-left: -15px;
   }
-
 }

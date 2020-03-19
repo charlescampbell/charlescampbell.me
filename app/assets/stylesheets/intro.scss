@@ -1,26 +1,26 @@
-@import 'variables';
+@import "variables";
 
 .intro-section {
-  padding-top: 200px;
+  padding-top: 50px;
   position: relative;
   background-size: cover;
   z-index: 1;
-  background-image: image_url('background');
+  background-image: image_url("background");
 }
 
 .intro-section:before {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .intro-section:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -48,7 +48,7 @@
   margin-bottom: -70px;
 }
 
-.intro .information>li {
+.intro .information > li {
   display: block;
   margin: 5px 0;
 }
@@ -57,24 +57,24 @@
   padding-top: 1rem;
 }
 
-.intro .social-icons>li>a {
+.intro .social-icons > li > a {
   font-size: 2rem;
   position: relative;
   margin: 0 5px 5px;
   color: #c0c0c0;
 }
 
-.intro .social-icons>li>a:hover {
+.intro .social-icons > li > a:hover {
   color: $campbell-blue;
 }
 
-.intro .social-icons>li>a:hover:after {
+.intro .social-icons > li > a:hover:after {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
 @media only screen and (max-width: 992px) {
   .intro-section {
-    padding-top: 250px;
+    padding-top: 50px;
   }
 }
