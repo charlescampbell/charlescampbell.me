@@ -201,6 +201,19 @@ b.max-bold {
   color: $campbell-lightblue;
 }
 
+.focused-link:hover {
+  font-weight: bold;
+}
+
+.focused-link-danger {
+  color: $campbell-lightred;
+}
+
+.focused-link-danger:hover {
+  color: $campbell-red;
+  font-weight: bold;
+}
+
 .margin-t-10 {
   margin-top: 10px;
 }
@@ -225,6 +238,11 @@ b.max-bold {
 
 .font-blue {
   color: $campbell-blue;
+  font-weight: bold;
+}
+
+.font-red {
+  color: $campbell-red;
   font-weight: bold;
 }
 

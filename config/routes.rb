@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'home/index', to: 'home#index', as: :home
+  get 'backend', to: 'home#backend', as: :backend
   get 'projects', to: 'project#index', as: :project
   get 'education', to: 'education#index', as: :education
 end
