@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/charlescampbell/campbell.me/compare/v1.2.0...v1.3.0) (2020-03-20)
+
+
+### Features
+
+* **backend:** Basic backend design for the homepage ([80a458c](https://github.com/charlescampbell/campbell.me/commit/80a458c23d24316f37ff2ca319a1ba76ff695ae8))
+* **highlights:** Basic CRUD operators with modals ([8f695fe](https://github.com/charlescampbell/campbell.me/commit/8f695fe0d0400af102cec3d58ed09fc205d37277))
+* **social links:** Basic CRUD operators with modals ([5753b51](https://github.com/charlescampbell/campbell.me/commit/5753b514009b00fb28e915f232751950283dd428))
+
 ## [1.2.0](https://github.com/charlescampbell/campbell.me/compare/v1.1.0...v1.2.0) (2020-03-19)
 
 
