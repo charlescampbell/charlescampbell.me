@@ -25,4 +25,12 @@ Rails.application.routes.draw do
     patch 'update/:id', to: 'highlight#update', as: :update_highlight
     delete 'delete/:id', to: 'highlight#destroy', as: :delete_highlight
   end
+
+  scope :project do
+    get 'new', to: 'project#new', as: :new_project
+    get 'edit/:id', to: 'project#edit', as: :edit_project
+    post 'create', to: 'project#create', as: :create_project
+    patch 'update/:id', to: 'project#update', as: :update_project
+    delete 'delete/:id', to: 'project#destroy', as: :delete_project
+  end
 end

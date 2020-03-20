@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="project-links">
-        <a href="http://lynnecampbell.co.uk" class="project-link">lynnecampbell.co.uk</a>
-        <a href="" class="project-link">quaybooks.nq</a>
-        <a href="" class="project-link">skmichellelectrical.co.uk</a>
-        <a href="" class="project-link">kits.co.uk</a>
-        <a href="" class="project-link">justgnosh.co.uk</a>
+        <h4 class="project-title">Finished Projects</h4>
+        <hr>
+        <% @projects.each do |project| %>
+          <%= link_to project.friendly_name, project.url, class: 'project-link' %>
+        <% end %>
       </div>
     </div>
   </div>

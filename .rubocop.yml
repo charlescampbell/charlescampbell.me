@@ -10,6 +10,14 @@ Style/HashEachMethods:
 Style/HashTransformValues:
   Enabled: true
 
+Metrics/MethodLength:
+  Exclude:
+    - app/controllers/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
+
 AllCops:
   Exclude:
     - db/**/*
