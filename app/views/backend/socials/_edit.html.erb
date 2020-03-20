@@ -8,18 +8,18 @@
 
   <div class="modal-body">
     <div class="form-group">
-      <label>Friendly Name:</label>
-      <%= form.text_field :friendly_name, class: 'form-control', placeholder: 'email' %>
+      <label>Friendly Name:</label><span class="font-red">*</span>
+      <%= form.text_field :friendly_name, class: 'form-control', placeholder: 'email', required: true %>
     </div>
 
     <div class="form-group">
-      <label>URL:</label>
-      <%= form.text_field :url, class: 'form-control', placeholder: 'https://url.co.uk' %>
+      <label>URL:</label><span class="font-red">*</span>
+      <%= form.text_field :url, class: 'form-control', placeholder: 'https://url.co.uk', required: true %>
     </div>
 
     <div class="form-group">
-      <label>Icon</label>
-      <%= form.text_field :icon, class: 'form-control', placeholder: 'fa fa-book' %>
+      <label>Icon</label><span class="font-red">*</span>
+      <%= form.text_field :icon, class: 'form-control', placeholder: 'fa fa-book', required: true %>
     </div>
   </div>
 
