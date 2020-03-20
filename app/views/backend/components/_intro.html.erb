@@ -13,27 +13,20 @@
           <h4 class="font-red">Dev Edition</h4>
 
           <ul class="social-icons">
-            <li>
-              <a href="mailto:charlie.campbell14@gmail.com"><i class="fa fa-envelope"></i></a>
-              <small>
-                <a href="" class="focused-link">edit</a>
-                <a href="" class="focused-link-danger">remove</a>
+            <% socials.each do |social| %>
+              <li>
+                <a href="<%= social.url %>"><i class="<%= social.icon %>"></i></a>
+                <small>
+                  <%= link_to 'edit', edit_social_path(social), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link'}%>
+                  <%= link_to 'remove', delete_social_path(social), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.'}%>
               </small>
             </li>
-
-            <li>
-              <a href="https://github.com/charlescampbell"><i class="fa fa-github"></i></a>
-
+            <% end %>
+            <li>/
               <small>
-                <a href="" class="focused-link">edit</a>
-                <a href="" class="focused-link-danger">remove</a>
+                <%= link_to 'new', new_social_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link'}%>
               </small>
             </li>
-
-            <li><a href="https://www.instagram.com/__charliecampbell/"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/charliebcampbell/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://twitter.com/charliecompbell"><i class="fa fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa fa-download"></i></a></li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,30 @@
+<%= form_with(model: @social, url: update_social_path) do |form| %>
+  <div class="modal-header">
+    <h5 class="modal-title">Editing <%= @social.friendly_name %></h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Friendly Name:</label>
+      <%= form.text_field :friendly_name, class: 'form-control', placeholder: 'email' %>
+    </div>
+
+    <div class="form-group">
+      <label>URL:</label>
+      <%= form.text_field :url, class: 'form-control', placeholder: 'https://url.co.uk' %>
+    </div>
+
+    <div class="form-group">
+      <label>Icon</label>
+      <%= form.text_field :icon, class: 'form-control', placeholder: 'fa fa-book' %>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <%= form.submit 'submit', class: 'focused-button' %>
+    <button type="button" class="focused-button-danger" data-dismiss="modal">cancel</button>
+  </div>
+<% end %>

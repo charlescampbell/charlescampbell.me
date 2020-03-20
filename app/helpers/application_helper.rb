@@ -12,4 +12,8 @@ module ApplicationHelper
 
     ''
   end
+
+  def socials
+    Social.all
+  end
 end

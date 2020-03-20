@@ -197,6 +197,40 @@ b.max-bold {
   background: $campbell-blue;
 }
 
+.focused-button {
+  padding: 0;
+  border: none;
+  background: none;
+  color: $campbell-lightblue;
+  font-size: larger;
+}
+
+.focused-button:hover {
+  padding: 0;
+  border: none;
+  background: none;
+  color: $campbell-blue;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.focused-button-danger {
+  padding: 0;
+  border: none;
+  background: none;
+  color: $campbell-lightred;
+  font-size: larger;
+}
+
+.focused-button-danger:hover {
+  padding: 0;
+  border: none;
+  background: none;
+  color: $campbell-red;
+  font-size: larger;
+  font-weight: bold;
+}
+
 .focused-link {
   color: $campbell-lightblue;
 }
