@@ -5,39 +5,25 @@
         <div class="heading">
           <h3>Experience</h3>
           <h6 class="font-lite-black">highlights</h6>
+          <%= link_to 'new', new_highlight_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link'}%>
         </div>
       </div>
 
       <div class="col-sm-8">
         <div class="experience-wrapper">
-          <div class="experience margin-b-50">
-            <h4>Development Undergraduate</h4>
-            <h5 class="font-yellow">UKCloud - Development</h5>
-            <h6 class="font-lite-black margin-t-10">JULY 2019 - SEPTEMBER 2020</h6>
-            <p class="margin-tb-10">
-              As part of my sandwich degree I chose to do a year in industry. I am
-              currently working at UKCloud as a member of the development team. My
-              primary focus is support existing legacy applications in Rails.
-            </p>
 
-            <a href="" class="focused-link">edit</a>
-            or
-            <a href="" class="focused-link-danger">remove</a>
-
-          </div>
-
-          <div class="experience margin-b-50">
-            <h4>BSc Software Engineering</h4>
-            <h5 class="font-yellow">Bournemouth University - SciTech</h5>
-            <h6 class="font-lite-black margin-t-10">GRADUATING IN MAY 2021 (4 YEARS)</h6>
-            <p class="margin-tb-10">
-              Software Engineering sandwich degree at Bournemouth university. A
-              general first year, followed with two specialised years of
-              software engineering separated by a year in industry.
-            </p>
-
-            <%= link_to 'more info', education_path, class: 'focused-link' %>
-          </div>
+          <% @highlights.each do |highlight| %>
+            <div class="experience margin-b-50">
+              <h4><%= highlight.title %></h4>
+              <h5><%= highlight.organisation %></h5>
+              <h6 class="font-lite-black margin-t-10"><%= duration_for(highlight) %></h6>
+              <p class="margin-tb-10"><%= highlight.description %></p>
+              <%= link_to 'more info', highlight.url, class: 'focused-link' unless highlight.url.empty? %>
+              <%= link_to 'edit', edit_highlight_path(highlight), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' }%>
+              or
+              <%= link_to 'remove', delete_highlight_path(highlight), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' }%>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
