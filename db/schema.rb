@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_20_210902) do
+ActiveRecord::Schema.define(version: 2020_03_21_140654) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "academic_years", force: :cascade do |t|
+    t.string "title"
+    t.string "grade"
+    t.bigint "qualification_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["qualification_id"], name: "index_academic_years_on_qualification_id"
+  end
+
+  create_table "educations", force: :cascade do |t|
+    t.string "unit"
+    t.string "grade"
+    t.string "description"
+    t.bigint "academic_year_id"
+    t.index ["academic_year_id"], name: "index_educations_on_academic_year_id"
+  end
 
   create_table "highlights", force: :cascade do |t|
     t.string "title"
@@ -27,6 +44,13 @@ ActiveRecord::Schema.define(version: 2020_03_20_210902) do
   create_table "projects", force: :cascade do |t|
     t.string "friendly_name"
     t.string "url"
+  end
+
+  create_table "qualifications", force: :cascade do |t|
+    t.string "title"
+    t.string "organisation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "socials", force: :cascade do |t|
