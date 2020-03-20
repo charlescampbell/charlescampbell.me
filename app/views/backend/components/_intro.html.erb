@@ -19,8 +19,8 @@
                 <small>
                   <%= link_to 'edit', edit_social_path(social), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link'}%>
                   <%= link_to 'remove', delete_social_path(social), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.'}%>
-              </small>
-            </li>
+                </small>
+              </li>
             <% end %>
             <li>/
               <small>
