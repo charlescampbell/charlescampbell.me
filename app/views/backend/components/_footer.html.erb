@@ -1,12 +1,15 @@
 <footer>
 	<div class="footer-links">
-		<%= link_to 'PROJECT', project_path, class: active_link?('projects') %>
+		<%= link_to 'PROJECT', backend_projects_path, class: active_link?('projects') %>
 		<small>/</small>
 
-		<%= link_to 'HOME', root_path, class: active_link?('backend') %>
+		<%= link_to 'HOME', backend_path, class: active_link?('home') %>
 		<small>/</small>
 
 		<%= link_to 'EDUCATION', education_path, class: active_link?('education') %>
+		<small>/</small>
+
+		<%= link_to 'PRODUCTION', root_path %>
 		<p id="notice"><%= notice %></p>
 	</div>
 </footer>

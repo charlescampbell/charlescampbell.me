@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'home/index', to: 'home#index', as: :home
-  get 'backend', to: 'home#backend', as: :backend
   get 'projects', to: 'project#index', as: :project
   get 'education', to: 'education#index', as: :education
+
+  get 'backend/home', to: 'home#backend', as: :backend
+  get 'backend/projects', to: 'project#backend', as: :backend_projects
 
   scope :social do
     get 'new', to: 'socials#new', as: :new_social
