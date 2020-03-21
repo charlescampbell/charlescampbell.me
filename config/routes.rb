@@ -34,6 +34,14 @@ Rails.application.routes.draw do
     delete 'delete/:id', to: 'project#destroy', as: :delete_project
   end
 
+  scope :education do
+    get 'new', to: 'education#new', as: :new_education
+    get 'edit/:id', to: 'education#edit', as: :edit_education
+    post 'create', to: 'education#create', as: :create_education
+    patch 'update/:id', to: 'education#update', as: :update_education
+    delete 'delete/:id', to: 'education#destroy', as: :delete_education
+  end
+
   scope :qualification do
     get 'new', to: 'qualification#new', as: :new_qualification
     get 'edit/:id', to: 'qualification#edit', as: :edit_qualification

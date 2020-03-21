@@ -1,0 +1,46 @@
+<section class="experience-section section">
+  <div class="container">
+    <%= link_to 'new qualification', new_qualification_path, { remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window', class: 'focused-link-success' } %> /
+    <%= link_to 'new academic year', new_academic_year_path, { remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window', class: 'focused-link' } %> /
+    <%= link_to 'new unit', new_education_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-warning' }%>
+    <hr>
+
+    <div class="row">
+      <% @qualifications.each do |qualification| %>
+        <div class="col-sm-4">
+          <div class="heading qualification-heading">
+            <h3><%= qualification.title %></h3>
+            <h6 class="font-lite-black"><%= qualification.organisation %></h6>
+            <%= link_to 'edit', edit_qualification_path(qualification), { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link' } %> or
+            <%= link_to 'remove', delete_qualification_path(qualification), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' } %>
+          </div>
+        </div>
+
+        <div class="col-sm-8">
+          <div class="experience-wrapper">
+            <% qualification.academic_year.order('created_at DESC').each do |academic_year| %>
+              <div class="experience margin-b-50">
+                <h4><%= academic_year.title %> <small class="font-blue"><%= academic_year.grade %>
+                  <%= link_to 'edit', edit_academic_year_path(academic_year), { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link' } %> or
+                  <%= link_to 'remove', delete_academic_year_path(academic_year), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' }%>
+                </small>
+                </h4>
+
+                <% unless academic_year.education.nil? %>
+                  <% academic_year.education.each do |education| %>
+                    <h5><%= education.unit %><small class="font-lightblue"> <%= education.grade %></small></h5>
+                    <p class="margin-tb-10"><%= education.description %></p>
+
+                    <%= link_to 'edit', edit_education_path(education), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' } %> or
+                    <%= link_to 'remove', delete_education_path(education), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' } %>
+                    <hr>
+                  <% end %>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
