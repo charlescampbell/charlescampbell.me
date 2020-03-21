@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/charlescampbell/campbell.me/compare/v1.3.0...v1.4.0) (2020-03-21)
+
+
+### Features
+
+* **academic year:** CRUD for mid level academic year ([b9cf16a](https://github.com/charlescampbell/campbell.me/commit/b9cf16a4da133beece08901f45e7e4a45b925701))
+* **education:** CRUD for top level education ([56d7679](https://github.com/charlescampbell/campbell.me/commit/56d7679889f88134480a0a577526397a4a5b6b43))
+* **projects:** Basic CRUD for projects page ([2b0624f](https://github.com/charlescampbell/campbell.me/commit/2b0624f466de2a816e645fd04628016c58efa9d7))
+* **projects:** Link projects backend ([dd993ef](https://github.com/charlescampbell/campbell.me/commit/dd993ef2df711a4d9cf9cc180a7671c7605c3cc1))
+* **qualification:** CRUD for top level qualifications ([6530d9c](https://github.com/charlescampbell/campbell.me/commit/6530d9c0dbb2ee1824754cbad483c6eb30b4b4b0))
+
 ## [1.3.0](https://github.com/charlescampbell/campbell.me/compare/v1.2.0...v1.3.0) (2020-03-20)
 
 
