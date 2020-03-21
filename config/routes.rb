@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   get 'projects', to: 'project#index', as: :project
   get 'education', to: 'education#index', as: :education
 
-  get 'backend/home', to: 'home#backend', as: :backend
-  get 'backend/projects', to: 'project#backend', as: :backend_projects
+  scope :backend do
+    get 'home', to: 'home#backend', as: :backend
+    get 'projects', to: 'project#backend', as: :backend_projects
+    get 'education', to: 'education#backend', as: :backend_education
+  end
 
   scope :social do
     get 'new', to: 'socials#new', as: :new_social
