@@ -33,4 +33,12 @@ Rails.application.routes.draw do
     patch 'update/:id', to: 'project#update', as: :update_project
     delete 'delete/:id', to: 'project#destroy', as: :delete_project
   end
+
+  scope :qualification do
+    get 'new', to: 'qualification#new', as: :new_qualification
+    get 'edit/:id', to: 'qualification#edit', as: :edit_qualification
+    post 'create', to: 'qualification#create', as: :create_qualification
+    patch 'update/:id', to: 'qualification#update', as: :update_qualification
+    delete 'delete/:id', to: 'qualification#destroy', as: :delete_qualification
+  end
 end
