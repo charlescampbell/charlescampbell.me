@@ -239,6 +239,24 @@ b.max-bold {
   font-weight: bold;
 }
 
+.focused-link-success {
+  color: $campbell-lightgreen;
+}
+
+.focused-link-success:hover {
+  color: $campbell-green;
+  font-weight: bold;
+}
+
+.focused-link-warning {
+  color: $campbell-lightorange;
+}
+
+.focused-link-warning:hover {
+  color: $campbell-orange;
+  font-weight: bold;
+}
+
 .focused-link-danger {
   color: $campbell-lightred;
 }
@@ -291,4 +309,8 @@ b.max-bold {
 
 .font-lite-black {
   color: #999;
+}
+
+.qualification-heading {
+  padding: 1rem;
 }
