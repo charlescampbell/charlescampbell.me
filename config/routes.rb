@@ -41,4 +41,12 @@ Rails.application.routes.draw do
     patch 'update/:id', to: 'qualification#update', as: :update_qualification
     delete 'delete/:id', to: 'qualification#destroy', as: :delete_qualification
   end
+
+  scope :academic_year do
+    get 'new', to: 'academic_year#new', as: :new_academic_year
+    get 'edit/:id', to: 'academic_year#edit', as: :edit_academic_year
+    post 'create', to: 'academic_year#create', as: :create_academic_year
+    patch 'update/:id', to: 'academic_year#update', as: :update_academic_year
+    delete 'delete/:id', to: 'academic_year#destroy', as: :delete_academic_year
+  end
 end
