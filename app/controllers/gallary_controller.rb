@@ -3,7 +3,7 @@
 class GallaryController < ApplicationController
   before_action :set_gallary, only: %i[show edit update destroy]
 
-  layout 'backend', except: %i[history]
+  layout 'backend', except: %i[history show]
 
   def index; end
 
