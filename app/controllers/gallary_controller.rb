@@ -2,7 +2,8 @@
 
 class GallaryController < ApplicationController
   before_action :set_gallary, only: %i[show edit update destroy]
-  layout 'backend'
+
+  layout 'backend', except: %i[history]
 
   def index; end
 
@@ -13,7 +14,7 @@ class GallaryController < ApplicationController
   end
 
   def history
-    @images = Gallary.where(category: 'portfolio')
+    @images = Gallary.where(category: 'portfolio').order('name')
 
     render 'frontend/gallary/history'
   end
