@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/charlescampbell/campbell.me/compare/v1.5.0...v1.5.1) (2020-03-22)
+
+
+### Bug Fixes
+
+* **gallaries:** Hide prod menu and fix ordering ([041a650](https://github.com/charlescampbell/campbell.me/commit/041a650990e2a0b12173a089fd1b85ec2cd6d12f))
+
 ## [1.5.0](https://github.com/charlescampbell/campbell.me/compare/v1.4.0...v1.5.0) (2020-03-22)
 
 
