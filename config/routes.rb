@@ -6,11 +6,13 @@ Rails.application.routes.draw do
   get 'home/index', to: 'home#index', as: :home
   get 'projects', to: 'project#index', as: :project
   get 'education', to: 'education#index', as: :education
+  get 'history', to: 'gallary#history', as: :history_gallary
 
   scope :backend do
     get 'home', to: 'home#backend', as: :backend
     get 'projects', to: 'project#backend', as: :backend_projects
     get 'education', to: 'education#backend', as: :backend_education
+    get 'gallary', to: 'gallary#backend', as: :backend_gallary
   end
 
   scope :social do
@@ -59,5 +61,14 @@ Rails.application.routes.draw do
     post 'create', to: 'academic_year#create', as: :create_academic_year
     patch 'update/:id', to: 'academic_year#update', as: :update_academic_year
     delete 'delete/:id', to: 'academic_year#destroy', as: :delete_academic_year
+  end
+
+  scope :gallary do
+    get 'new', to: 'gallary#new', as: :new_image
+    get 'show/:id', to: 'gallary#show', as: :show_gallary
+    get 'edit/:id', to: 'gallary#edit', as: :edit_gallary
+    post 'create', to: 'gallary#create', as: :create_gallary
+    patch 'update/:id', to: 'gallary#update', as: :update_gallary
+    delete 'delete/:id', to: 'gallary#destroy', as: :delete_gallary
   end
 end

@@ -1,0 +1,35 @@
+<%= form_with(model: @gallary, url: create_gallary_path) do |form| %>
+  <div class="modal-header">
+    <h5 class="modal-title">New Gallary Image</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Title:</label><span class="font-red">*</span>
+      <%= form.text_field :name, class: 'form-control', placeholder: 'Lynne Campbell Website', required: true %>
+    </div>
+
+    <div class="form-group">
+      <label>Description:</label><span class="font-red">*</span>
+      <%= form.text_area :description, class: 'form-control', rows: 5, placeholder: 'Type here...', required: true %>
+    </div>
+
+    <div class="custom-file">
+      <%= form.file_field :image, class: 'custom-file-input', id: 'customFile' %>
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+
+    <div class="form-group">
+      <label>Type:</label>
+      <%= form.text_field :category, class: 'form-control', placeholder: 'portfolio' %>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <%= form.submit 'submit', class: 'focused-button' %>
+    <button type="button" class="focused-button-danger" data-dismiss="modal">cancel</button>
+  </div>
+<% end %>
