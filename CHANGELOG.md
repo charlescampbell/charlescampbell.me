@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/charlescampbell/campbell.me/compare/v1.5.1...v1.5.2) (2020-03-22)
+
+
+### Bug Fixes
+
+* **gallery:** Stop prod options on show ([ffcad90](https://github.com/charlescampbell/campbell.me/commit/ffcad90bf91409e8d913fbbb9b7f93d8e1c81307))
+
 ### [1.5.1](https://github.com/charlescampbell/campbell.me/compare/v1.5.0...v1.5.1) (2020-03-22)
 
 
