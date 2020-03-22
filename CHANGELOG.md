@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/charlescampbell/campbell.me/compare/v1.4.0...v1.5.0) (2020-03-22)
+
+
+### Features
+
+* **gallery:** Allow a gallery for uploading outdated websites ([67f966c](https://github.com/charlescampbell/campbell.me/commit/67f966c2293f59d45363f7aafaeec59777750e11))
+
 ## [1.4.0](https://github.com/charlescampbell/campbell.me/compare/v1.3.0...v1.4.0) (2020-03-21)
 
 
