@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.6.0..v1.7.0) (2020-05-26)
+
+
+### Features
+
+* **backend:** Display version number ([37633a8](https://github.com/charlescampbell/charlescampbell.me/commit/37633a8ad904ed6bab49f558b154d5da8885e108))
+* **favicon:** Add dev and frontend favicons ([b7d73e1](https://github.com/charlescampbell/charlescampbell.me/commit/b7d73e1d0476e677bd5f793f8d945806c0ae2794))
+
 ## [1.6.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.5.2..v1.6.0) (2020-05-26)
 
 
