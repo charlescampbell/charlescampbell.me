@@ -17,6 +17,10 @@ module ApplicationHelper
     Social.all
   end
 
+  def profile(title)
+    Profile.where(title: title).first
+  end
+
   def duration_for(highlight)
     from = format_date(highlight.start_date)
     to = highlight.end_date.nil? ? 'Present' : format_date(highlight.end_date)

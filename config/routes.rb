@@ -16,6 +16,14 @@ Rails.application.routes.draw do
     get 'gallary', to: 'gallary#backend', as: :backend_gallary
   end
 
+  scope :profile do
+    get 'new', to: 'profile#new', as: :new_profile
+    get 'edit/:id', to: 'profile#edit', as: :edit_profile
+    post 'create', to: 'profile#create', as: :create_profile
+    patch 'update/:id', to: 'profile#update', as: :update_profile
+    delete 'delete/:id', to: 'profile#destroy', as: :delete_profile
+  end
+
   scope :social do
     get 'new', to: 'socials#new', as: :new_social
     get 'edit/:id', to: 'socials#edit', as: :edit_social
