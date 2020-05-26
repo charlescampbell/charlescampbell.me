@@ -24,6 +24,10 @@ module ApplicationHelper
     "#{from} - #{to}"
   end
 
+  def version
+    "v#{File.read('./VERSION')}"
+  end
+
   private
 
   def format_date(date)
