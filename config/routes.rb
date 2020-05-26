@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'history', to: 'gallary#history', as: :history_gallary
 
   scope :backend do
+    root to: redirect('backend/home')
     get 'home', to: 'home#backend', as: :backend
     get 'projects', to: 'project#backend', as: :backend_projects
     get 'education', to: 'education#backend', as: :backend_education
