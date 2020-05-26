@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.7.0..v1.8.0) (2020-05-26)
+
+
+### Features
+
+* **profile:** Add ability to change name and position ([719546a](https://github.com/charlescampbell/charlescampbell.me/commit/719546a8b368eb4e05e12c44c0b2bd5eeebb7047))
+
 ## [1.7.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.6.0..v1.7.0) (2020-05-26)
 
 
