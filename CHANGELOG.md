@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.5.2..v1.6.0) (2020-05-26)
+
+
+### Features
+
+* **backend:** Hide all backend services behind basic auth ([21674d7](https://github.com/charlescampbell/charlescampbell.me/commit/21674d70d707de0b9bf65857fb99ac5c07241320))
+
+
+### Bug Fixes
+
+* **highlights:** Sort by date descending ([16bf5ef](https://github.com/charlescampbell/charlescampbell.me/commit/16bf5effbd10a7583a638f61c00f67418dea1eb8))
+
 ### [1.5.2](https://github.com/charlescampbell/charlescampbell.me/compare/v1.5.1...v1.5.2) (2020-03-22)
 
 
