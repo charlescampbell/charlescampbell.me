@@ -20,6 +20,6 @@ class HomeController < ApplicationController
   private
 
   def set_highlights
-    @highlights = Highlight.all
+    @highlights = Highlight.order('start_date DESC')
   end
 end
