@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.8.0..v1.9.0) (2020-05-26)
+
+
+### Features
+
+* **metrics:** Add prometheus ([f48d931](https://github.com/charlescampbell/charlescampbell.me/commit/f48d931fa1142efb2526c43395d9e5a69fef0313))
+
 ## [1.8.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.7.0..v1.8.0) (2020-05-26)
 
 
