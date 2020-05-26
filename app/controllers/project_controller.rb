@@ -6,6 +6,10 @@ class ProjectController < ApplicationController
   before_action :set_projects, only: %i[index backend]
   before_action :set_project, only: %i[edit update destroy]
 
+  http_basic_authenticate_with name: ENV['BACKEND_USERNAME'],
+                               password: ENV['BACKEND_PASSWORD'],
+                               only: %i[backend]
+
   def index
     render 'frontend/projects/index'
   end

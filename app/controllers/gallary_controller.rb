@@ -1,9 +1,13 @@
 # frozen_string_literal: true
 
 class GallaryController < ApplicationController
+  layout 'backend', except: %i[history show]
+
   before_action :set_gallary, only: %i[show edit update destroy]
 
-  layout 'backend', except: %i[history show]
+  http_basic_authenticate_with name: ENV['BACKEND_USERNAME'],
+                               password: ENV['BACKEND_PASSWORD'],
+                               except: %i[history show]
 
   def index; end
 

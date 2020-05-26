@@ -5,6 +5,10 @@ class HomeController < ApplicationController
 
   before_action :set_highlights, only: %i[index backend]
 
+  http_basic_authenticate_with name: ENV['BACKEND_USERNAME'],
+                               password: ENV['BACKEND_PASSWORD'],
+                               only: %i[backend]
+
   def index
     render 'frontend/home/index'
   end
