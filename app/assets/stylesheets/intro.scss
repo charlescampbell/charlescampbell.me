@@ -85,4 +85,16 @@
   .intro .social-icons > li > a {
     font-size: 3.5rem;
   }
+
+  .intro-section {
+    background-image: none;
+  }
+
+  .intro-section:before {
+    background: none;
+  }
+
+  .profile-img {
+    display: none;
+  }
 }
