@@ -59,6 +59,8 @@ class SocialsController < ApplicationController
   end
 
   def social_params
-    params.require(:social).permit(:friendly_name, :url, :icon)
+    params.require(:social).permit(
+      :friendly_name, :url, :icon, :display, :position
+    )
   end
 end

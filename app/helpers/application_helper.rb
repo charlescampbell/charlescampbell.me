@@ -14,7 +14,13 @@ module ApplicationHelper
   end
 
   def socials
-    Social.all
+    Social.order('position ASC')
+  end
+
+  def mobile_icon?(social)
+    return 'hide-icon' unless social.display == 'y'
+
+    ''
   end
 
   def profile(title)

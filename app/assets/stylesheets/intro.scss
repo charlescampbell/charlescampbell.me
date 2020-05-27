@@ -84,6 +84,7 @@
 
   .intro .social-icons > li > a {
     font-size: 3.5rem;
+    padding: 1rem;
   }
 
   .intro-section {
@@ -95,6 +96,10 @@
   }
 
   .profile-img {
+    display: none;
+  }
+
+  .hide-icon {
     display: none;
   }
 }

@@ -14,7 +14,7 @@
 
           <ul class="social-icons">
             <% socials.each do |social| %>
-              <li><a href="<%= social.url %>"><i class="<%= social.icon %>"></i></a></li>
+              <li><a class="<%= mobile_icon?(social) %>" href="<%= social.url %>"><i class="<%= social.icon %>"></i></a></li>
             <% end %>
           </ul>
         </div>
