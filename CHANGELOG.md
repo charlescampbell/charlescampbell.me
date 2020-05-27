@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.9.1..v1.10.0) (2020-05-27)
+
+
+### Features
+
+* **social icons:** Enable display options for mobile ([896d665](https://github.com/charlescampbell/charlescampbell.me/commit/896d665c73b9d544c0f00f05a2be1fc32c719207))
+
+
+### Bug Fixes
+
+* **intro:** Hacky temporary fix to remove random line appearing on mobile ([a38925f](https://github.com/charlescampbell/charlescampbell.me/commit/a38925fbb482a8e76fb0c51066009d13f00455d9))
+* **intro:** Improve spacing for mobile content ([75dd9b5](https://github.com/charlescampbell/charlescampbell.me/commit/75dd9b5a10d9a061560b4d5fede3c34abb52c21a))
+
 ### [1.9.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.9.0..v1.9.1) (2020-05-27)
 
 
