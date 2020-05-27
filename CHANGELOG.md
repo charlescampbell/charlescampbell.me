@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.10.0..v1.10.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* **mobile:** Increase padding on footer ([817b02b](https://github.com/charlescampbell/charlescampbell.me/commit/817b02bf65d18e76612cbe3ad6d51187cdd7aebc))
+
 ## [1.10.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.9.1..v1.10.0) (2020-05-27)
 
 
