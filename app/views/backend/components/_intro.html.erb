@@ -7,11 +7,11 @@
         <div class="intro">
           <div class="profile-img"></div>
 
-          <h4 class="font-red">Dev Edition (<%= version %>)</h4>
+          <h4 class="font-red position">Dev Edition (<%= version %>)</h4>
 
           <% if profile('name') && profile('position') %>
-            <h2><%= profile('name').value %></h2>
-            <h4 class="font-blue"><%= profile('position').value %></h4>
+            <h2 class="name"><%= profile('name').value %></h2>
+            <h4 class="font-blue position"><%= profile('position').value %></h4>
 
             <%= link_to 'edit name', edit_profile_path(profile('name')), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link'} %>
             <%= link_to 'edit position', edit_profile_path(profile('position')), {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link'} %>

@@ -17,7 +17,6 @@
 @import "variables";
 @import "intro";
 @import "project";
-@import "mobile";
 @import "footer";
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -313,4 +312,14 @@ b.max-bold {
 
 .qualification-heading {
   padding: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 1025px) {
+  .section {
+    padding: 3rem 0 3rem;
+  }
+
+  .container {
+    max-width: 90%;
+  }
 }
