@@ -9,6 +9,9 @@ new-version:
 
 	npx standard-version
 
+lint:
+	rubocop
+
 pr:
 	rspec && rubocop
 
