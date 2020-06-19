@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.10.1..v1.11.0) (2020-06-19)
+
+
+### Features
+
+* **projects:** Add support for repositioning projects ([3e2369c](https://github.com/charlescampbell/charlescampbell.me/commit/3e2369c6d4e8d0d0c9158dd3c1e4c8eba4643f16))
+
 ### [1.10.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.10.0..v1.10.1) (2020-05-27)
 
 
