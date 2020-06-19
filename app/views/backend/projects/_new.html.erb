@@ -16,6 +16,11 @@
       <label>URL:</label><span class="font-red">*</span>
       <%= form.text_field :url, class: 'form-control', placeholder: 'https://lynnecampbell.co.uk', required: true %>
     </div>
+
+    <div class="form-group">
+      <label>Poisition:</label><span class="font-red">*</span>
+      <%= form.number_field :position, class: 'form-control', placeholder: '1..10', required: true %>
+    </div>
   </div>
 
   <div class="modal-footer">

@@ -82,10 +82,10 @@ class ProjectController < ApplicationController
   end
 
   def set_projects
-    @projects = Project.all
+    @projects = Project.order('position ASC')
   end
 
   def project_params
-    params.require(:project).permit(:friendly_name, :url)
+    params.require(:project).permit(:friendly_name, :url, :position)
   end
 end
