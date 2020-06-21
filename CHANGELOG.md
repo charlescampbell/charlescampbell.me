@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.11.1..v1.12.0) (2020-06-21)
+
+
+### Features
+
+* **tags:** Add quick and dirty way of adding tags to units ([e27c95c](https://github.com/charlescampbell/charlescampbell.me/commit/e27c95c3e09aa17b5219183f00e50c6da66af9e1))
+
 ### [1.11.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.11.0..v1.11.1) (2020-06-19)
 
 ## [1.11.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.10.1..v1.11.0) (2020-06-19)
