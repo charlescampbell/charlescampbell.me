@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.12.0..v1.12.1) (2020-06-21)
+
+
+### Bug Fixes
+
+* **tag:** Slap the tags on the frontend too ([c832cd4](https://github.com/charlescampbell/charlescampbell.me/commit/c832cd4afdeb701e476d2c397ada2ba7c2a570a7))
+
 ## [1.12.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.11.1..v1.12.0) (2020-06-21)
 
 
