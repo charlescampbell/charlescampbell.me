@@ -2,7 +2,8 @@
   <div class="container">
     <%= link_to 'new qualification', new_qualification_path, { remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window', class: 'focused-link-success' } %> /
     <%= link_to 'new academic year', new_academic_year_path, { remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window', class: 'focused-link' } %> /
-    <%= link_to 'new unit', new_education_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-warning' }%>
+    <%= link_to 'new unit', new_education_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-warning' }%> /
+    <%= link_to 'new tag', new_tag_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-success' }%>
     <hr>
 
     <div class="row">
@@ -28,7 +29,19 @@
 
                 <% unless academic_year.education.nil? %>
                   <% academic_year.education.each do |education| %>
-                    <h5><%= education.unit %><small class="font-lightblue"> <%= education.grade %></small></h5>
+                    <h5>
+                      <%= education.unit %>
+                      <small class="font-lightblue">
+                        <%= education.grade %>
+
+                        <% education.tag.each do |tag| %>
+                          <%= tag_for(tag) %>
+                          <%= link_to 'edit', edit_tag_path(education), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' } %> or
+                          <%= link_to 'remove', delete_tag_path(education), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' } %>
+                        <% end %>
+                      </small>
+                    </h5>
+
                     <p class="margin-tb-10"><%= education.description %></p>
 
                     <%= link_to 'edit', edit_education_path(education), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' } %> or

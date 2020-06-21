@@ -1,0 +1,30 @@
+<%= form_with(model: @tag, url: update_tag_path) do |form| %>
+  <div class="modal-header">
+    <h5 class="modal-title">Editing <%= @tag.tag %></h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Education:</label><span class="font-red">*</span>
+      <%= form.collection_select :education_id, Education.all,:id, :unit, {}, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <label>Tag:</label><span class="font-red">*</span>
+      <%= form.text_field :tag, class: 'form-control', placeholder: 'i.e. RUBY, RAILS', required: true %>
+    </div>
+
+    <div class="form-group">
+      <label>Colour:</label>(red, green, yellow, blue, white, black)<span class="font-red">*</span>
+      <%= form.text_field :colour, class: 'form-control', placeholder: 'i.e. red, yellow', required: true %>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <%= form.submit 'submit', class: 'focused-button' %>
+    <button type="button" class="focused-button-danger" data-dismiss="modal">cancel</button>
+  </div>
+<% end %>

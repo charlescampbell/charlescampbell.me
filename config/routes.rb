@@ -48,6 +48,14 @@ Rails.application.routes.draw do
     delete 'delete/:id', to: 'project#destroy', as: :delete_project
   end
 
+  scope :tag do
+    get 'new', to: 'tag#new', as: :new_tag
+    get 'edit/:id', to: 'tag#edit', as: :edit_tag
+    post 'create', to: 'tag#create', as: :create_tag
+    patch 'update/:id', to: 'tag#update', as: :update_tag
+    delete 'delete/:id', to: 'tag#destroy', as: :delete_tag
+  end
+
   scope :education do
     get 'new', to: 'education#new', as: :new_education
     get 'edit/:id', to: 'education#edit', as: :edit_education

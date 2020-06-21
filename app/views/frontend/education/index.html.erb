@@ -13,7 +13,12 @@
           <div class="experience-wrapper">
             <% qualification.academic_year.order('created_at DESC').each do |academic_year| %>
               <div class="experience margin-b-50">
-                <h4><%= academic_year.title %> <small class="font-blue"><%= academic_year.grade %></small></h4>
+                <h4>
+                  <%= academic_year.title %>
+                  <small class="font-blue">
+                    <%= academic_year.grade %>
+                </small>
+                </h4>
 
                 <% unless academic_year.education.nil? %>
                   <% academic_year.education.each do |education| %>

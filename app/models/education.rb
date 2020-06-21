@@ -2,4 +2,5 @@
 
 class Education < ApplicationRecord
   belongs_to :academic_year
+  has_many :tag
 end
