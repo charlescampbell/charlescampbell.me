@@ -22,7 +22,16 @@
 
                 <% unless academic_year.education.nil? %>
                   <% academic_year.education.each do |education| %>
-                    <h5><%= education.unit %><small class="font-lightblue"> <%= education.grade %></small></h5>
+                    <h5>
+                      <%= education.unit %>
+                      <small class="font-lightblue">
+                        <%= education.grade %>
+                        <% education.tag.each do |tag| %>
+                          <%= tag_for(tag) %>
+                        <% end %>
+                      </small>
+                    </h5>
+
                     <p class="margin-tb-10"><%= education.description %></p>
                     <hr>
                   <% end %>
