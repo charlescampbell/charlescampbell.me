@@ -7,6 +7,11 @@ module ApplicationHelper
     ''
   end
 
+  def unit_title_for(education_id)
+    education = Education.find(education_id)
+    education.unit
+  end
+
   def active_home?
     return 'active' if request.original_url.to_s == root_url
 

@@ -49,7 +49,7 @@ Rails.application.routes.draw do
   end
 
   scope :tag do
-    get 'new', to: 'tag#new', as: :new_tag
+    get 'new/:education_id', to: 'tag#new', as: :new_tag
     get 'edit/:id', to: 'tag#edit', as: :edit_tag
     post 'create', to: 'tag#create', as: :create_tag
     patch 'update/:id', to: 'tag#update', as: :update_tag
