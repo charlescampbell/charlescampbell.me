@@ -2,8 +2,7 @@
   <div class="container">
     <%= link_to 'new qualification', new_qualification_path, { remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window', class: 'focused-link-success' } %> /
     <%= link_to 'new academic year', new_academic_year_path, { remote: true, 'data-toggle': 'modal', 'data-target': '#modal-window', class: 'focused-link' } %> /
-    <%= link_to 'new unit', new_education_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-warning' }%> /
-    <%= link_to 'new tag', new_tag_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-success' }%>
+    <%= link_to 'new unit', new_education_path, { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link-warning' } %>
     <hr>
 
     <div class="row">
@@ -20,36 +19,7 @@
         <div class="col-sm-8">
           <div class="experience-wrapper">
             <% qualification.academic_year.order('created_at DESC').each do |academic_year| %>
-              <div class="experience margin-b-50">
-                <h4><%= academic_year.title %> <small class="font-blue"><%= academic_year.grade %>
-                  <%= link_to 'edit', edit_academic_year_path(academic_year), { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link' } %> or
-                  <%= link_to 'remove', delete_academic_year_path(academic_year), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' }%>
-                </small>
-                </h4>
-
-                <% unless academic_year.education.nil? %>
-                  <% academic_year.education.each do |education| %>
-                    <h5>
-                      <%= education.unit %>
-                      <small class="font-lightblue">
-                        <%= education.grade %>
-
-                        <% education.tag.each do |tag| %>
-                          <%= tag_for(tag) %>
-                          <%= link_to 'edit', edit_tag_path(tag), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' } %> or
-                          <%= link_to 'remove', delete_tag_path(tag), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' } %>
-                        <% end %>
-                      </small>
-                    </h5>
-
-                    <p class="margin-tb-10"><%= education.description %></p>
-
-                    <%= link_to 'edit', edit_education_path(education), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' } %> or
-                    <%= link_to 'remove', delete_education_path(education), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' } %>
-                    <hr>
-                  <% end %>
-                <% end %>
-              </div>
+              <%= render 'backend/education/academic_year', academic_year: academic_year %>
             <% end %>
           </div>
         </div>
