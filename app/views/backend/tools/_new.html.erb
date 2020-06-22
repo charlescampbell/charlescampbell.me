@@ -1,0 +1,35 @@
+<%= form_with(model: @tool, url: create_tool_path) do |form| %>
+  <div class="modal-header">
+    <h5 class="modal-title">New Tool or Language</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Tool:</label><span class="font-red">*</span>
+      <%= form.text_field :tool, class: 'form-control', placeholder: 'i.e. ruby or vscode', required: true %>
+    </div>
+
+    <div class="form-group">
+      <label>Colour:</label>(red, green, yellow, blue, white, black)
+      <%= form.text_field :colour, class: 'form-control', placeholder: 'i.e. red, yellow' %>
+    </div>
+
+    <div class="form-group">
+      <label>Type:</label>(language or tool)<span class="font-red">*</span>
+      <%= form.text_field :status, class: 'form-control', placeholder: 'i.e. language, tool', required: true %>
+    </div>
+
+    <div class="form-group">
+      <label>Icon:</label>(url for icon)<span class="font-red">*</span>
+      <%= form.text_field :icon_url, class: 'form-control', placeholder: 'i.e. https://icon.com' %>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <%= form.submit 'submit', class: 'focused-button' %>
+    <button type="button" class="focused-button-danger" data-dismiss="modal">cancel</button>
+  </div>
+<% end %>

@@ -13,10 +13,28 @@ module TagHelper
     "<span class='#{colour_for(data)}'>#{data.tag}</span>".html_safe
   end
 
+  def tool_link_tag(data)
+    link_to data.tool,
+            delete_tool_path(data),
+            class: colour_for(data),
+            method: :delete,
+            data: { confirm: "Delete #{data.tool} tag?" }
+  end
+
+  def tool_tag(data)
+    "<span class='#{colour_for(data)}'>#{data.tool}</span>".html_safe
+  end
+
+  def tool_icon(data)
+    link_to image_tag(data.icon_url),
+            delete_tool_path(data),
+            class: 'tool-icon',
+            method: :delete,
+            data: { confirm: "Delete #{data.tool}?" }
+  end
+
   private
 
-  # rubocop:disable Metrics/MethodLength
-  # rubocop:disable Metrics/CyclomaticComplexity
   def colour_for(data)
     colour = case data.colour
              when 'red'
@@ -37,6 +55,4 @@ module TagHelper
 
     "badge badge-#{colour}"
   end
-  # rubocop:enable Metrics/MethodLength
-  # rubocop:enable Metrics/CyclomaticComplexity
 end

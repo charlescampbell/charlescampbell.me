@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'projects', to: 'project#index', as: :project
   get 'education', to: 'education#index', as: :education
   get 'history', to: 'gallary#history', as: :history_gallary
+  get 'tools', to: 'tools#index', as: :tools
 
   scope :backend do
     root to: redirect('backend/home')
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
     get 'projects', to: 'project#backend', as: :backend_projects
     get 'education', to: 'education#backend', as: :backend_education
     get 'gallary', to: 'gallary#backend', as: :backend_gallary
+    get 'tools', to: 'tools#backend', as: :backend_tools
   end
 
   scope :profile do
@@ -85,5 +87,11 @@ Rails.application.routes.draw do
     post 'create', to: 'gallary#create', as: :create_gallary
     patch 'update/:id', to: 'gallary#update', as: :update_gallary
     delete 'delete/:id', to: 'gallary#destroy', as: :delete_gallary
+  end
+
+  scope :tools do
+    get 'new', to: 'tools#new', as: :new_tool
+    post 'create', to: 'tools#create', as: :create_tool
+    delete 'delete/:id', to: 'tools#destroy', as: :delete_tool
   end
 end
