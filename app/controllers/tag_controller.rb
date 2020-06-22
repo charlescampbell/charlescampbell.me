@@ -13,6 +13,7 @@ class TagController < ApplicationController
 
   def create
     @tag = Tag.new(tag_params)
+    @tag.tag = @tag.tag.upcase
 
     respond_to do |format|
       if @tag.save
