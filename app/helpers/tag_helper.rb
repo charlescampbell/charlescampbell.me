@@ -1,12 +1,16 @@
 # frozen_string_literal: true
 
 module TagHelper
-  def tag_for(data)
+  def tag_link_for(data)
     link_to data.tag,
             delete_tag_path(data),
             class: colour_for(data),
             method: :delete,
             data: { confirm: "Delete #{data.tag} tag?" }
+  end
+
+  def tag_for(data)
+    "<span class='#{colour_for(data)}'>#{data.tag}</span>".html_safe
   end
 
   private
