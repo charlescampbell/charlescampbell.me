@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.12.2..v1.13.0) (2020-06-22)
+
+
+### Features
+
+* **tag:** Remove ability to edit tags ([0c1241f](https://github.com/charlescampbell/charlescampbell.me/commit/0c1241ffa35ed7e6ab8f494ee067c1e9e0c9ed5e))
+
+
+### Bug Fixes
+
+* **tag:** Add tag based on education ([aeb7368](https://github.com/charlescampbell/charlescampbell.me/commit/aeb7368adcd806fe9636eb540618ebd088a8b561))
+* **tag:** Call upcase on tags ([3b9c398](https://github.com/charlescampbell/charlescampbell.me/commit/3b9c3986838e62e65099b8016b70efd113e2c0cd))
+
 ### [1.12.2](https://github.com/charlescampbell/charlescampbell.me/compare/v1.12.1..v1.12.2) (2020-06-21)
 
 
