@@ -32,6 +32,7 @@ class ToolsController < ApplicationController
 
   def create
     @tool = Tool.new(tool_params)
+    @tool.tool = @tool.tool.upcase
 
     respond_to do |format|
       if @tool.save

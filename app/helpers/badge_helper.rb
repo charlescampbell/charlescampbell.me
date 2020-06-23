@@ -38,23 +38,6 @@ module BadgeHelper
   private
 
   def colour_for(data)
-    colour = case data.colour
-             when 'red'
-               'danger'
-             when 'green'
-               'success'
-             when 'yellow'
-               'warning'
-             when 'blue'
-               'info'
-             when 'white'
-               'light'
-             when 'black'
-               'dark'
-             else
-               'primary'
-             end
-
-    "badge badge-#{colour}"
+    "badge badge-#{data.colour}"
   end
 end

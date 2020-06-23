@@ -13,13 +13,25 @@
     </div>
 
     <div class="form-group">
-      <label>Colour:</label>(red, green, yellow, blue, white, black)
-      <%= form.text_field :colour, class: 'form-control', placeholder: 'i.e. red, yellow' %>
+      <label>Colour:</label>
+      <%= form.select :colour, options_for_select(
+          [
+            ['Red', 'danger'], ['Green', 'success'], ['Yellow', 'warning'],
+            ['Blue', 'info'], ['White', 'light'], ['Black', 'dark']
+          ]
+        ), {}, class: 'form-control'
+      %>
     </div>
 
     <div class="form-group">
-      <label>Type:</label>(language or tool)<span class="font-red">*</span>
-      <%= form.text_field :status, class: 'form-control', placeholder: 'i.e. language, tool', required: true %>
+      <label>Type:</label>
+      <%= form.select :status, options_for_select(
+          [
+            ['Language or Framework', 'language'],
+            ['Tool or Application', 'tool']
+          ]
+        ), {}, class: 'form-control'
+      %>
     </div>
 
     <div class="form-group">
