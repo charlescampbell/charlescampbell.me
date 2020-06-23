@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.13.0..v1.14.0) (2020-06-23)
+
+
+### Features
+
+* **tools:** Create a page for adding tooling ([7caa30e](https://github.com/charlescampbell/charlescampbell.me/commit/7caa30e7c81ff1b8a1106c8f7ec06018ab1fc372))
+
+
+### Bug Fixes
+
+* **colours:** Swap colour selection to a dropdown ([36dc629](https://github.com/charlescampbell/charlescampbell.me/commit/36dc6299bd750e5c2a01d4cdaec5ad41624b8e0e))
+* **tag:** Make sure you cannot delete tags from the frontend ([03c4276](https://github.com/charlescampbell/charlescampbell.me/commit/03c4276cb4a94410cf17218f17bb6cac382b7a11))
+* **tool:** Remove new button from frontend - copy paste fail ([ecd8346](https://github.com/charlescampbell/charlescampbell.me/commit/ecd834691418e19eb8494b78ea86bcb2366407cb))
+
 ## [1.13.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.12.2..v1.13.0) (2020-06-22)
 
 
