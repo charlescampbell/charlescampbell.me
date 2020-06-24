@@ -17,6 +17,7 @@ Metrics/MethodLength:
 Metrics/BlockLength:
   Exclude:
     - config/routes.rb
+    - spec/**/*
 
 AllCops:
   Exclude:
