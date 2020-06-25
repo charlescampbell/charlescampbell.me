@@ -15,7 +15,8 @@ Highlight.create(
   end_date: Time.now,
   description: 'This is a description all about how I am a software engineering student
                 at ukcloud. It is a pretty good job but it can get a bit bad in the summer
-                when it is ridiculously hot like it is when I am writing this.'
+                when it is ridiculously hot like it is when I am writing this.',
+  url: 'test'
 )
 
 Highlight.create(
@@ -25,5 +26,6 @@ Highlight.create(
   end_date: Time.now - 1.years,
   description: 'This is a description all about how I am a software engineering student
                 at ukcloud. It is a pretty good job but it can get a bit bad in the summer
-                when it is ridiculously hot like it is when I am writing this.'
+                when it is ridiculously hot like it is when I am writing this.',
+  url: 'test'
 )
