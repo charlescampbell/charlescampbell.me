@@ -50,6 +50,12 @@
     color: white;
   }
 
+  .modal-content,
+  .form-control {
+    background-color: $darkmode-background;
+    color: white;
+  }
+
   @media (min-width: 320px) and (max-width: 1025px) {
     .intro-section {
       background-image: none;
