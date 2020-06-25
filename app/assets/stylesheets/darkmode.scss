@@ -25,4 +25,10 @@
   .intro-section {
     background-image: image_url("darkmode-background");
   }
+
+  @media (min-width: 320px) and (max-width: 1025px) {
+    .intro-section {
+      background-image: none;
+    }
+  }
 }
