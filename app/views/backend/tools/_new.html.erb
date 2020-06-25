@@ -22,22 +22,6 @@
         ), {}, class: 'form-control'
       %>
     </div>
-
-    <div class="form-group">
-      <label>Type:</label>
-      <%= form.select :status, options_for_select(
-          [
-            ['Language or Framework', 'language'],
-            ['Tool or Application', 'tool']
-          ]
-        ), {}, class: 'form-control'
-      %>
-    </div>
-
-    <div class="form-group">
-      <label>Icon:</label>(url for icon)<span class="font-red">*</span>
-      <%= form.text_field :icon_url, class: 'form-control', placeholder: 'i.e. https://icon.com' %>
-    </div>
   </div>
 
   <div class="modal-footer">

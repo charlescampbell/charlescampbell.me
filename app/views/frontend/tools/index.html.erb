@@ -2,7 +2,15 @@
   <div class="container">
     <div class="row">
       <div class="project-links">
-        <%= render 'frontend/tools/languages', languages: @languages %>
+        <h4 class="project-title">Toolkit</h4>
+
+        <hr>
+
+        <span class="tools">
+          <% @tools.each do |language|%>
+            <%= badge_for(language) %>
+          <% end %>
+        </span>
       </div>
     </div>
   </div>

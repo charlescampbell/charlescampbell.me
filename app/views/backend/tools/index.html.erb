@@ -3,7 +3,15 @@
     <div class="row">
       <div class="project-links">
         <%= link_to 'new', new_tool_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'project-link'} %>
-        <%= render 'backend/tools/languages', languages: @languages %>
+        <h4 class="project-title">Toolkit</h4>
+
+        <hr>
+
+        <span class="tools">
+          <% @tools.each do |tool|%>
+            <%= linked_badge_for(tool) %>
+          <% end %>
+        </span>
       </div>
     </div>
   </div>

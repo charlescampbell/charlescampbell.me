@@ -4,7 +4,6 @@ class ToolsController < ApplicationController
   layout 'backend', only: %i[backend]
 
   before_action :set_tools, only: %i[index backend]
-  before_action :set_languages, only: %i[index backend]
   before_action :set_tool, only: %i[destroy]
 
   http_basic_authenticate_with name: ENV['BACKEND_USERNAME'],
@@ -63,10 +62,6 @@ class ToolsController < ApplicationController
 
   def set_tools
     @tools = Tool.all
-  end
-
-  def set_languages
-    @languages = Tool.where(status: 'language')
   end
 
   def tool_params
