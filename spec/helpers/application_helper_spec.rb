@@ -3,9 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe ApplicationHelper do
-  let(:qualification) { create(:qualification) }
-  let(:academic_year) { create(:academic_year, qualification: qualification) }
-  let(:education) { create(:education, academic_year: academic_year) }
+  let(:education) { create(:education) }
   let(:social) { create(:social) }
 
   describe 'unit_title_for' do

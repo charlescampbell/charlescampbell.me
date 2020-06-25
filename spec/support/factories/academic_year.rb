@@ -2,6 +2,7 @@
 
 FactoryBot.define do
   factory :academic_year do
+    association :qualification
     title { 'First Year' }
     grade { 'FIRST' }
   end

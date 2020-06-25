@@ -2,6 +2,7 @@
 
 FactoryBot.define do
   factory :tag do
+    association :education
     tag { 'ruby' }
     colour { 'red' }
   end

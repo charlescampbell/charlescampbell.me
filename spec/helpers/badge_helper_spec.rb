@@ -5,10 +5,7 @@ require 'rails_helper'
 RSpec.describe BadgeHelper do
   describe 'bootstrap badge' do
     let(:tool) { create(:tool) }
-    let(:qualification) { create(:qualification) }
-    let(:academic_year) { create(:academic_year, qualification: qualification) }
-    let(:education) { create(:education, academic_year: academic_year) }
-    let(:tag) { create(:tag, education: education) }
+    let(:tag) { create(:tag) }
 
     context 'when rendering the backend tools page' do
       it 'returns a bootstrap badge link for deleting the correct tool' do
