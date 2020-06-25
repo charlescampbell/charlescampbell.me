@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.15.2](https://github.com/charlescampbell/charlescampbell.me/compare/v1.15.1..v1.15.2) (2020-06-25)
+
+
+### Bug Fixes
+
+* **seed:** Add urls ([f09e5d1](https://github.com/charlescampbell/charlescampbell.me/commit/f09e5d1c9eac3e06fd1f77462ec4a224c598ff4c))
+
 ### [1.15.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.15.0..v1.15.1) (2020-06-25)
 
 
