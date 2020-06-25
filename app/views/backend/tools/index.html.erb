@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="project-links">
-        <%= link_to 'new', new_tool_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'project-link'} %>
+        <%= link_to 'new', new_tool_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'project-link', id: 'new-tool' } %>
         <h4 class="project-title">Toolkit</h4>
 
         <hr>
@@ -16,3 +16,11 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("keydown", function(event){
+    if(event.key === "n"){
+      document.getElementById("new-tool").click();
+    }
+  });
+</script>
