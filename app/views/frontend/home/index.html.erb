@@ -16,7 +16,7 @@
               <h5><%= highlight.organisation %></h5>
               <h6 class="font-lite-black margin-t-10"><%= duration_for(highlight) %></h6>
               <p class="margin-tb-10"><%= highlight.description %></p>
-              <%= link_to 'more info', highlight.url, class: 'focused-link' unless highlight.url.empty? %>
+              <%= link_to 'more info', highlight.url, class: 'focused-link' if highlight.url %>
             </div>
           <% end %>
         </div>
