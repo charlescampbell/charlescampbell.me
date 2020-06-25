@@ -1,6 +1,6 @@
 <div class="experience margin-b-50">
   <h4><%= academic_year.title %> <small class="font-blue"><%= academic_year.grade %>
-    <%= link_to 'edit', edit_academic_year_path(academic_year), { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link' } %> or
+    <%= link_to 'edit', edit_academic_year_path(academic_year), { remote: true, 'data-toggle':  "modal", 'data-target': '#modal-window', class: 'focused-link' } %> <span class="or">or</span>
     <%= link_to 'remove', delete_academic_year_path(academic_year), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' }%>
   </small>
   </h4>

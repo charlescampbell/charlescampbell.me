@@ -20,7 +20,7 @@
               <p class="margin-tb-10"><%= highlight.description %></p>
               <%= link_to 'more info', highlight.url, class: 'focused-link' unless highlight.url.empty? %>
               <%= link_to 'edit', edit_highlight_path(highlight), { :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'focused-link' } %>
-              or
+              <span class="or">or</span>
               <%= link_to 'remove', delete_highlight_path(highlight), method: :delete, class: 'focused-link-danger', data: { confirm: 'Are you sure? This action can not be undone.' }%>
             </div>
           <% end %>
