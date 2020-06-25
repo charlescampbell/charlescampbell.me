@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.14.2..v1.15.0) (2020-06-25)
+
+
+### Features
+
+* **style:** System based darkmode ([23e6ccd](https://github.com/charlescampbell/charlescampbell.me/commit/23e6ccd4d1c93a625ed36b86ce6c9d82e8c43743))
+
+
+### Bug Fixes
+
+* **home:** Better checking for whether a highlight has a link ([bf7e98f](https://github.com/charlescampbell/charlescampbell.me/commit/bf7e98fea51963220b5a8113185ba3bd177747ea))
+* **tag:** Add validation to the tag model ([6c644b6](https://github.com/charlescampbell/charlescampbell.me/commit/6c644b6bc0e7ba4a1ec31cb990ae31d35ec73408))
+
 ### [1.14.2](https://github.com/charlescampbell/charlescampbell.me/compare/v1.14.1..v1.14.2) (2020-06-23)
 
 ### [1.14.1](https://github.com/charlescampbell/charlescampbell.me/compare/v1.14.0..v1.14.1) (2020-06-23)
