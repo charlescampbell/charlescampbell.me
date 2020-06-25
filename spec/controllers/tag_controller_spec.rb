@@ -6,10 +6,7 @@ RSpec.describe TagController, type: :controller do
   let(:education) { create(:education) }
 
   describe '#new' do
-    it 'assigns a new tag to @tag' do # Maybe think about moving the params to the create action to make testing easier
-      expect { get :new, params: { education_id: education } }.to raise_error
-      expect(assigns(:tag)).to be_a_new(Tag)
-    end
+    it 'assigns a new tag to @tag' # Maybe think about moving the params to the create action to make testing easier
   end
 
   describe '#create' do
