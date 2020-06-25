@@ -26,6 +26,26 @@
     background-image: image_url("darkmode-background");
   }
 
+  .badge-danger {
+    background-color: #b96161;
+  }
+
+  .badge-success {
+    background-color: #418d52;
+  }
+
+  .badge-warning {
+    background-color: #cbaa46;
+  }
+
+  .badge-info {
+    background-color: #4d8c96;
+  }
+
+  .badge-dark {
+    background-color: #606468;
+  }
+
   @media (min-width: 320px) and (max-width: 1025px) {
     .intro-section {
       background-image: none;
