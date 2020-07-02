@@ -2,4 +2,3 @@
 
 RSpec.describe QualificationController do
 end
-
