@@ -4,20 +4,26 @@ A basic website to act as a digital portfolio for myself.
 
 ---
 
-## Contributing
+## Development
 
-### Development
+### Developing Locally
 
-#### Setup
+1. Clone this project to your machine
+2. Run `bundle install` to install the apps dependencies
+3. Run `bin/rails server` to start the app at 'http://localhost:3000'
+4. Run `bundle exec rspec` to run the ruby test suite
+5. Run `bundle exec rubocop` to run the lint tool
+6. Run `bundle exec rails console` to boot up the console
+7. Finally write some code!
 
-Make sure to run `bundle install` to ensure you can develop.
+### Developing in Docker
 
-#### Rails
+1. Build the docker image for the project `docker-compose build`
+2. Start the application in docker `docker-compose up`
+3. Create the databases for the docker container `docker-compose run app bundle exec rake db:create`
+4. Migrate the databases for the docker container `docker-compose run app bundle exec rake db:migrate`
 
-`bin/rails server`: Starts the application locally for development on localhost:3000
-`bin/rails console`: Starts up the rails console for debugging
-
-#### Commiting to the repository
+### Commiting to the repository
 
 This project follows the conventional commit specification detailed here
 `www.conventionalcommits.org`
@@ -29,18 +35,12 @@ This project follows the conventional commit specification detailed here
 `test` : Any form of testing
 `lint` : Rubocop fixes
 
-#### Pull Requests
+## Release
 
-Before raising a pull request make sure that rubocop and rspec both come back
-passing.
-
-`make pr`: Runs rubocop and rspec local
-
-### Release
-
-To create a release run `make new-version` this will tag the release based on
-the commit history and automatically bump the version and generate the changelog.
-
-### Deployment
-
-`bundle exec cap production deploy`
+1. Run `make new-version` this will:
+   - Look at the previous version and the commits to workout the version
+   - Bump the version in the version file
+   - Generate a changelog using the conventional commits
+   - Tag and commit the new release
+2. Run `make deploy` this will:
+   - Run `cap production deploy` and release the app

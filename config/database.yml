@@ -3,16 +3,16 @@ development:
   encoding: unicode
   database: ccampbell_development
   pool: 5
-  username: charlie
+  username: postgres
   password:
   timeout: 5000
+  host: postgresql
 
 test:
   adapter: postgresql
   encoding: unicode
   database: ccampbell_test
   pool: 5
-  username: charlie
+  username: postgres
   password:
   timeout: 5000
- 

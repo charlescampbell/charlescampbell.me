@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  postgresql:
+    image: postgres:12.3-alpine
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_DB: ccampbell_development
+    ports:
+      - "5432:5432"
+  app:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - ".:/charliecampbell"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgresql
