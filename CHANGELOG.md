@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/charlescampbell/charlescampbell.me/compare/v1.15.6..v1.16.0) (2020-07-08)
+
+
+### Features
+
+* **project:** Dockerize application ([f7d6b9b](https://github.com/charlescampbell/charlescampbell.me/commit/f7d6b9b919fb965b335500e5d0b1c961c5b11043))
+
 ### [1.15.6](https://github.com/charlescampbell/charlescampbell.me/compare/v1.15.5..v1.15.6) (2020-06-25)
 
 ### [1.15.5](https://github.com/charlescampbell/charlescampbell.me/compare/v1.15.4..v1.15.5) (2020-06-25)
