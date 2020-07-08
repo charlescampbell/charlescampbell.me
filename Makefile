@@ -10,7 +10,8 @@ new-version:
 	npx standard-version
 
 lint:
-	rubocop
+	$(eval IMAGE := $(shell docker build -f Dockerfile.test . -q))
+	docker run --rm "$(IMAGE)" sh -c "bundle exec rubocop"
 
 pr:
 	rspec && rubocop

@@ -20,8 +20,13 @@ A basic website to act as a digital portfolio for myself.
 
 1. Build the docker image for the project `docker-compose build`
 2. Start the application in docker `docker-compose up`
-3. Create the databases for the docker container `docker-compose run app bundle exec rake db:create`
-4. Migrate the databases for the docker container `docker-compose run app bundle exec rake db:migrate`
+3. Run rubocop inside the container `make lint`
+
+_Note:_ You made need to start up the database for the first time
+
+1. Create the databases for the docker container `docker-compose run app bundle exec rake db:create`
+2. Migrate the databases for the docker container `docker-compose run app bundle exec rake db:migrate`
+3. Seed the database for the container `docker-compose run app bundle exec rake db:seed`
 
 ### Commiting to the repository
 
